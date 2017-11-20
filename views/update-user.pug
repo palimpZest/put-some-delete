@@ -1,0 +1,8 @@
+extends layout
+block content
+    html
+        body
+            form(method="POST", action="?_method=PUT")
+                .form-group
+                    input(id="#user.form-control", type="text", placeholder="New username", name="username")
+                    button(class="btn.btn-default", type="submit") Rename
